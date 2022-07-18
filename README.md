@@ -15,7 +15,7 @@ Have a problem or idea? Make an [issue](https://github.com/wbthomason/packer.nvi
 1. [Notices](#notices)
 2. [Features](#features)
 3. [Requirements](#requirements)
-4. [Quickstart](#quickstart)
+4. [start](#quickstart)
 5. [Bootstrapping](#bootstrapping)
 6. [Usage](#usage)
     1. [The startup function](#the-startup-function)
@@ -92,7 +92,7 @@ Then you can write your plugin specification in Lua, e.g. (in `~/.config/nvim/lu
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
